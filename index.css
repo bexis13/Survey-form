@@ -11,3 +11,18 @@ body{
   padding-top: 20px;
   padding: 10px;
 }
+
+.labels{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right-column{
+  display: inline-block;
+  text-align: left;
+}
+
+.radio-list{
+  list-style : none;
+  
+}
