@@ -14,39 +14,76 @@
             <form id="survey-form" method="GET" action="#">
 
                 <div>
-                    <label id="name-label" for="name"> *Name:  </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <div class="labels">
+                         <label id="name-label" for="name"> *Name:  </label>
+                    </div>
+                    <div class ="right-column">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
                 </div>
                 <div>
-                    <label id="email-label" for="email"> *Email:  </label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                     <div class="labels">
+                         <label id="email-label" for="email"> *Email:  </label>
+                    </div>
+                    <div class ="right-column">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>   
                 </div>
                 <div>
-                    <label id="number-label" for="age"> *Age:  </label>
-                    <input type="number" name="age" id="number" placeholder="Age" required
-                    min="6" max="11">
+                     <div class="labels">
+                         <label id="number-label" for="age"> *Age:  </label>
+                    </div>
+                    <div class ="right-column">
+                        <input type="number" name="age" id="number" placeholder="Age" required
+                        min="6" max="11">
+                    </div>    
                 </div>
                 <div>
-                    <label id="dropdown" for="dropdown"> What do you like most about Trypstr ?:  </label>
-                    <select>
-                        <option selected> select an option </option>
-                        <option>How it looks</option>
-                        <option>community</option>
-                        <option>Its features</option>
-                        <option>It's free</option>
-                    </select>
+                     <div class="labels">
+                          <label id="dropdown" for="dropdown"> What do you like most about Trypstr ?:  </label>
+                    </div>
+                    <div class ="right-column">
+                        <select>
+                            <option selected> select an option </option>
+                            <option>How it looks</option>
+                            <option>community</option>
+                            <option>Its features</option>
+                            <option>It's free</option>
+                         </select>
+                    </div>
                 </div>
                 <div>
                     <div class="labels">
                         <label for="radio"> How likely are you to recommend Trypstr to a friend ?:  </label>
                     </div>    
                      <div class ="right-column">
-                         <ul class="radio-list">
-                             <li> <input type="radio" value="Definitely">Definitely</li>
-                             <li><input type="radio" value="Maybe"> Maybe</li>
-                             <li><input type="radio" value="Not sure"> Not sure</li>
+                         <ul class="list">
+                             <li> <input type="radio" name="recommend" value="Definitely">Definitely</li>
+                             <li><input type="radio" name="recommend" value="Maybe"> Maybe</li>
+                             <li><input type="radio" name="recommend" value="Not sure"> Not sure</li>
                          </ul>
                      </div>   
+                </div>
+                <div>
+                    <div class="labels">
+                        <label for="radio"> What should we improve/add in the future ?:  </label>
+                    </div> 
+                    <div class ="right-column">
+                         <ul class="list">
+                             <li> <input type="checkbox" value="Design">Design</li>
+                             <li><input type="checkbox" value="chatting"> Add chatting feature</li>
+                             <li><input type="checkbox" value="location"> Improve location accuracy</li>
+                         </ul>
+                     </div>   
+                </div>
+                <div>
+                     <div class="labels">
+                        <label for="radio"> Any other comment/suggestion ?:  </label>
+                    </div> 
+                    <div class ="right-column">
+                         <textarea name="" id="" cols="30" rows="10" placeholder="
+                         Enter your comments here"></textarea>
+                    </div> 
                 </div>
             </form>
         </div>

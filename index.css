@@ -15,14 +15,16 @@ body{
 .labels{
   display: inline-block;
   vertical-align: top;
+  width: 40%;
 }
 
 .right-column{
   display: inline-block;
   text-align: left;
+   width: 40%;
 }
 
-.radio-list{
+.list{
   list-style : none;
   
 }
